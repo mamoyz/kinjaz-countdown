@@ -82,12 +82,14 @@
             <img src="assets/images/1111.png" alt="">
         </div>
     </div>
+
     <script>
-        // window.addEventListener("orientationchange", () => {
-        //     window.location.reload();
-        // });
-    </script>
-    <script>
+        window.addEventListener("resize", () => {
+            window.location.reload();
+        });
+        window.addEventListener("orientationchange", () => {
+            window.location.reload();
+        });
         var countDownDate = new Date("Oct 24, 2021 00:15:00").getTime();
         var x = setInterval(function () {
             var now = new Date().getTime();
