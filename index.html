@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>KINJAZ | Movement in the shadows</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <!--  <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="Maltron">
+    <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content="Maltron">
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="Maltron">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description"
+        content="Bringing a wealth of experience in the fields of consumer packaged goods, media/entertainment, and finance, we carefully craft and develop start-up brands from A to Z, covering every aspect of the growth process.">
+    <meta data-n-head="ssr" data-hid="title" name="title" content="Maltron">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Bringing a wealth of experience in the fields of consumer packaged goods, media/entertainment, and finance, we carefully craft and develop start-up brands from A to Z, covering every aspect of the growth process.">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="Maltron">
+    <meta data-n-head="ssr" property="og:locale" content="en_US">
+    <meta data-n-head="ssr" property="og:type" content="website">
+    <meta data-n-head="ssr" property="og:title" content="Maltron">
+    <meta data-n-head="ssr" property="og:description"
+        content="Bringing a wealth of experience in the fields of consumer packaged goods, media/entertainment, and finance, we carefully craft and develop start-up brands from A to Z, covering every aspect of the growth process.">
+    <meta data-n-head="ssr" property="og:url" content="https://maltronventures.com">
+    <meta data-n-head="ssr" property="og:site_name" content="Maltron">
+    <meta data-n-head="ssr" property="og:image" content="https://maltronventures.com/assets/images/og_image.jpg">
+    <meta data-n-head="ssr" property="og:image:secure_url"
+        content="https://maltronventures.com/assets/images/og_image.jpg">
+    <meta data-n-head="ssr" property="og:image:width" content="1200">
+    <meta data-n-head="ssr" property="og:image:height" content="630">
+    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image">
+    <meta data-n-head="ssr" name="twitter:description" content="Maltron">
+    <meta data-n-head="ssr" name="twitter:title" content="Maltron">
+    <meta data-n-head="ssr" name="twitter:image" content="https://maltronventures.com/assets/images/og_image.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;800;900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"> -->
+    <link rel="stylesheet" href="./assets/scss/main.min.css">
+
+</head>
+
+<body>
+    <div id="kinjaz">
+        <div id="countdown">
+            <img class="kinjaz-logo" src="assets/images/kinjaz-logo.png" alt="KINJAZ">
+            <div class="time" id="days">
+                <span>DAYS</span>
+                <strong></strong>
+            </div>
+            <div class="time" id="hours">
+                <span>HRS</span>
+                <strong></strong>
+            </div>
+            <div class="time" id="mins">
+                <span>MIN</span>
+                <strong></strong>
+            </div>
+            <div class="time" id="seconds">
+                <span>SEC</span>
+                <strong></strong>
+            </div>
+        </div>
+        <div class="logo-1111">
+            <img src="assets/images/1111.png" alt="">
+        </div>
+    </div>
+    <script>
+        // window.addEventListener("orientationchange", () => {
+        //     window.location.reload();
+        // });
+    </script>
+    <script>
+        var countDownDate = new Date("Oct 24, 2021 00:15:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.querySelector("#days strong").innerHTML = days.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+            document.querySelector("#hours strong").innerHTML = hours.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+            document.querySelector("#mins strong").innerHTML = minutes.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+            document.querySelector("#seconds strong").innerHTML = seconds.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+        var fetch = setInterval(function () {
+            if (document.readyState == "complete") {
+                clearInterval(fetch);
+                setTimeout(function () {
+                    document.querySelector("#kinjaz").classList.add("ready");
+                }, 100);
+            }
+        }, 200);
+    </script>
+
+</body>
+
+</html>

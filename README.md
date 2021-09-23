@@ -1,1 +1,1 @@
-# kinjaz-countdown
+# Kinjaz Countdown
